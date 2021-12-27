@@ -1,0 +1,48 @@
+<!--
+/**
+    * @author _ Pathum_Kaleesha
+    * @created - 12/27/2021 - 8:27 AM
+    * @since - v0.1.0 - CSS
+/**
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation Example</title>
+    <style>
+        section {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            animation-name: testOne;
+            animation-duration: 3s;
+            position: relative;
+            animation-iteration-count:2;
+            animation-direction: alternate;
+            animation-fill-mode: both;
+
+            /*animation-delay: 2s;*/
+        }
+
+        @keyframes testOne {
+            from {
+                left: 0;
+               /* transform: rotate(360deg);*/
+                background-color: green;
+            }
+            to {
+                left: 500px;
+               /* transform: rotate(-360deg);*/
+                background-color: blue;
+
+            }
+        }
+    </style>
+</head>
+<body>
+<section>
+
+</section>
+</body>
+</html>
